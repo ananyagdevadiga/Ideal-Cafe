@@ -51,7 +51,7 @@ const StatsCards = () => {
             <FontAwesomeIcon
               icon={item.icon}
               style={{
-                fontSize: '52px',
+                fontSize: '55px',
                 color: '#8b2e87',
                 marginBottom: '15px',
               }}
