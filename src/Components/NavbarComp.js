@@ -77,7 +77,7 @@ function NavbarComp() {
               <Nav.Link href="#login" className="icon-link">
                 <div className="icon-wrapper">
                   <FaUser className="nav-icon" />
-                  <div className="nav-label">Login</div>
+                  <div className="nav-label">Login/SignUp.</div>
                 </div>
               </Nav.Link>
             </Nav>
