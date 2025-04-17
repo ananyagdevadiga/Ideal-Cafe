@@ -94,9 +94,8 @@ const MenuSection = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="d-flex justify-content-between align-items-center mt-2">
+                  <div className="d-flex justify-content-between align-items-center">
                     <span className="menu-price">₹{item.price}</span>
-                    {/* ✅ Link Order Now to /menu */}
                     <Link to="/menu">
                       <Button variant="outline-primary">Order Now</Button>
                     </Link>
