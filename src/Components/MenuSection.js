@@ -73,9 +73,9 @@ const MenuSection = () => {
 
       {/* Scrollable Cards */}
       <div className="slider-container">
-        <Button className="slider-btn left" onClick={() => scroll('left')}>
+        <button className="slider-btn left" onClick={() => scroll('left')}>
           <FontAwesomeIcon icon={faChevronLeft} />
-        </Button>
+        </button>
 
         <div className="card-slider" ref={scrollRef}>
           {menuItems.map((item, index) => (
@@ -84,20 +84,18 @@ const MenuSection = () => {
                 <div className="image-wrapper">
                   <img src={item.images[0]} className="card-img-top" alt={item.name} />
                 </div>
-                <Card.Body className="d-flex flex-column justify-content-between">
-                  <div>
-                    <div className="d-flex justify-content-between align-items-center mb-2">
-                      <h5 className="mb-0">{item.name}</h5>
-                      <div className="text-warning d-flex align-items-center">
-                        <FaStar style={{ marginRight: '4px' }} />
-                        <small>{item.rating}</small>
-                      </div>
+                <Card.Body className="d-flex flex-column justify-content-between pt-2 pb-2">
+                  <div className="d-flex justify-content-between align-items-center mb-1">
+                    <h5 className="mb-0">{item.name}</h5>
+                    <div className="text-warning d-flex align-items-center">
+                      <FaStar style={{ marginRight: '4px' }} />
+                      <small>{item.rating}</small>
                     </div>
                   </div>
-                  <div className="d-flex justify-content-between align-items-center">
+                  <div className="d-flex justify-content-between align-items-center mt-1">
                     <span className="menu-price">₹{item.price}</span>
                     <Link to="/menu">
-                      <Button variant="outline-primary">Order Now</Button>
+                      <Button variant="outline-primary" size="sm">Order Now</Button>
                     </Link>
                   </div>
                 </Card.Body>
@@ -106,9 +104,9 @@ const MenuSection = () => {
           ))}
         </div>
 
-        <Button className="slider-btn right" onClick={() => scroll('right')}>
+        <button className="slider-btn right" onClick={() => scroll('right')}>
           <FontAwesomeIcon icon={faChevronRight} />
-        </Button>
+        </button>
       </div>
     </div>
   );
