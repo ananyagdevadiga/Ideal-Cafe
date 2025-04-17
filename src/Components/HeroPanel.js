@@ -24,13 +24,13 @@ const HeroPanel = () => {
           />
         </Carousel.Item>
 
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="/hero-img3.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
+        // <Carousel.Item>
+          // <img
+            // className="d-block w-100"
+            // src="/hero-img3.jpg"
+            // alt="Third slide"
+          // />
+        // </Carousel.Item>
       </Carousel>
     </div>
   );
