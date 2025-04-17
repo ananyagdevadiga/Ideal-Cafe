@@ -83,7 +83,7 @@
     position: absolute;
     top: 35%;
     z-index: 2;
-    background-color: black; /* Darker, less transparent */
+    background-color: rgba(0, 0, 0, 0.5); /* Darker, less transparent */
     color: #fff;
     border: none;
     font-size: 32px;
